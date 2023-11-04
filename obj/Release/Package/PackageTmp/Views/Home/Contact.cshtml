@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <!-- <img src="logo.png" alt="Logo" width="50"> -->
+                <img src="~/Content/images/CHC.png" alt="" width="80">
+            </a>
+
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Trainingprg">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/Comunitycon">Community Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="map-area pt-5">
+            <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2 MIEKE COURT,  BURLEIGH HEADS, QLD, 4220&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    allowfullscreen></iframe>
+        </div>
+
+        <!-- ##### Contact Area Start ##### -->
+        <section class="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-content-area">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="contact-content contact-information">
+                                        <h4>Contact</h4>
+                                        <p>admin@christianhopecentre.org@gmail.com</p>
+                                        <p>1300 161 629</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="contact-content contact-information">
+                                        <h4>Address</h4>
+                                        <p>2 MIEKE COURT,</p>
+                                        <p> BURLEIGH HEADS, QLD, 4220 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ##### Contact Area End ##### -->
+        <!-- ##### Contact Form Area Start ##### -->
+        <div class="contact-form pb-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Heading -->
+                    <div class="col-12">
+                        <div class="section-heading">
+                            <h2>Leave A Message</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Contact Form Area -->
+                        @using (Html.BeginForm("Content", "Home", FormMethod.Post))
+                        {
+                            <div class="contact-form-area">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div class="form-group">
+                                                <label for="contact-name">Full Name*:</label>
+                                                <input type="text" class="form-control" id="contact-name"
+                                                       placeholder="Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="form-group">
+                                                <label for="contact-email">Email*:</label>
+                                                <input type="email" class="form-control" id="contact-email"
+                                                       placeholder="info.deercreative@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div class="form-group">
+                                                <label for="contact-number">Phone*:</label>
+                                                <input type="text" class="form-control" id="contact-number"
+                                                       placeholder="(+12) 123 456 7910">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="message">Message*:</label>
+                                                <textarea class="form-control" name="message" id="message" cols="30"
+                                                          rows="10" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <button type="submit" class="btn main-btn mt-15">Submit Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+

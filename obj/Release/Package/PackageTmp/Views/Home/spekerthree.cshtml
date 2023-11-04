@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "spekerthree";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <!-- <img src="logo.png" alt="Logo" width="50"> -->
+                <img src="~/Content/images/CHC.png" alt="" width="80">
+            </a>
+
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Trainingprg">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Comunitycon">Community Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="flyerBg">
+                <div class="flyerContainer">
+                    <div class="container pb-4">
+                        <div class="row gap-3">
+                            <div class="col-12">
+                                <div class=" d-flex mb-4">
+                                    <div class="upcoming-events-thumbnail speaker-width">
+                                        <img src="~/Content/images/stephen_treloar.jpg"
+                                             alt="" class="image-container">
+                                    </div>
+                                    <div class="upcoming-events-content d-flex">
+                                        <div class="events-text">
+                                            <div>
+                                                <h2 class="custom-color fw-bold">Dr. Stephen Treloar</h2>
+                                                <p>
+                                                    <span class="custom-color">Education: </span> Holds Doctorate (DBA);
+                                                    Masters of Commercial Law; MBA; Adv. Diploma with AICD + various
+                                                    certifications.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <h2 class="custom-color fw-bold">Negation Mastery </h2>
+                                    <p class="text-white text-justify">
+                                        Dr Stephen Treloar
+                                        Holds Doctorate (DBA); Masters of Commercial Law; MBA; Adv. Diploma with AICD + various
+                                        certifications. Experience includes that of Senior Lecturer, Director of Postgraduate Studies,
+                                        Academic Director, Provost, Dean, and Registrar. Teaching experience across a broad spectrum of
+                                        subjects cognate to management, HRM, risk management and commercial law.
+                                        Completed short course programs at both Harvard Business School, and Harvard Law School.
+                                        Over 30 years experience as GM, CEO, MD and academic/researcher/consultant. Seeking short-term
+                                        teaching, visiting professorship roles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
